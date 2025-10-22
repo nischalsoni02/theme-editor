@@ -1,6 +1,6 @@
 # Visual Theme Editor
 
-A visual theme editor that provides a WYSIWYG experience for customizing e-commerce storefronts. This editor allows merchants to edit their theme settings in real-time with instant visual feedback.
+It lets users edit a website’s look in real-time. You can change the Header, Hero section, Products, and Footer. You can either be in Edit Mode to make changes or Preview Mode to see how it looks live.
 
 ## Features
 
@@ -63,4 +63,34 @@ A visual theme editor that provides a WYSIWYG experience for customizing e-comme
 Click the **Save** button in the top toolbar to:
 - Outputs the complete theme configuration (JSON) to the browser console
 
+## How state works
+1. The main App keeps all the data in React’s useState.
+2. **Important states:**
+ - themeConfig → current theme settings
+ - isEditMode → are we editing or just previewing?
+ - showSettings → do we show the settings panel?
+3. **Updating state:**
+Whenever you make a change (like editing a title), the app creates a new copy of the theme data and updates themeConfig. This way React updates the components automatically.
 
+## How changes flow
+1. Settings Panel:
+   - You type something or change a setting.
+   - The panel calls an update function.
+   - App updates themeConfig → React re-renders the components → changes appear immediately.
+3. Inline Edit:
+   - You click on text (like the hero title).
+   - Type your new text.
+   - Press Enter → state updates → component shows the new text instantly.
+5. Preview Mode:
+   - Click “Preview”.
+   - Edit panel hides.
+   - Buttons and links work normally.
+   - Inline editing is turned off.
+
+## Summary
+- App loads default theme.
+- Renders all sections (Header, Hero, Products, Footer).
+- SettingsPanel lets you change anything.
+- InlineEdit lets you type directly on the page.
+- Edit Mode → you can change things.
+- Preview Mode → see how the website will look with working links and buttons.
