@@ -21,7 +21,7 @@ A React-based visual theme editor that provides a WYSIWYG experience for customi
 
 1. **Navigate to the project directory**:
    ```bash
-   cd minitaka-final
+   cd theme-editor
    ```
 
 2. **Install dependencies**:
