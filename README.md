@@ -1,6 +1,6 @@
 # Visual Theme Editor
 
-A React-based visual theme editor that provides a WYSIWYG experience for customizing e-commerce storefronts. This editor allows merchants to edit their theme settings in real-time with instant visual feedback.
+A visual theme editor that provides a WYSIWYG experience for customizing e-commerce storefronts. This editor allows merchants to edit their theme settings in real-time with instant visual feedback.
 
 ## Features
 
