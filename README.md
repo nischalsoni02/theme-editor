@@ -19,7 +19,7 @@ It lets users edit a website’s look in real-time. You can change the Header, H
 
 ### Installation Steps
 
-1. **Navigate to the project directory**:
+1. **Clone the Repo and and navigate to project directory**:
    ```bash
    cd theme-editor
    ```
